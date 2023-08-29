@@ -68,6 +68,7 @@ Once the application is up and running, you can use the provided API endpoints t
 
 Detailed API documentation can be found at [http://52.186.89.164/swagger/index.html](http://52.186.89.164/swagger/index.html).
 
+Postman collection : https://documenter.getpostman.com/view/25643962/2s9Y5Zw2e2#ea2ac729-2186-4d79-a818-e384f8473a82  
 
 ## Contributing
 
