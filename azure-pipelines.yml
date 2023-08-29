@@ -1,0 +1,32 @@
+trigger:
+  branches:
+    include:
+      - main
+
+ 
+
+pool:
+  vmImage: "ubuntu-latest"
+
+ 
+
+variables:
+  registryConnection: empowerserviceconnection
+  imageName: postservice
+
+ 
+
+steps:
+  - task: Docker@2
+    displayName: "Build image"
+    inputs:
+      repository: $(imageName)
+      containerRegistry: $(registryConnection)
+      command: buildAndPush
+      Dockerfile: Dockerfile
+      tags: latest
+
+  - task: PublishPipelineArtifact@1
+    inputs:
+      pathToPublish: 'Post.Service/Manifest'
+      artifact: 'manifests'

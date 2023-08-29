@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BaseClasses\BaseController.cs" />
+    <Compile Remove="HelperClasses\Helper.cs" />
+    <Compile Remove="HelperClasses\ImageHelper.cs" />
+    <Compile Remove="HelperClasses\ImageUtilities.cs" />
+    <Compile Remove="HelperClasses\LocalizationHelper.cs" />
+    <Compile Remove="HelperClasses\WebAuthenticationService.cs" />
+    <Compile Remove="HelperClasses\WebConfigurations.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="NLog" Version="5.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Post.Service.Models\Post.Service.Models.csproj" />
+    <ProjectReference Include="..\Post.Service.Dto\Post.Service.DTO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BaseResponse\" />
+    <Folder Include="Dto\" />
+  </ItemGroup>
+
+</Project>

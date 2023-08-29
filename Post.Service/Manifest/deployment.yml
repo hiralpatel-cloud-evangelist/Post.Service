@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postservice-application   # This should match the label in template.metadata.labels
+  template:
+    metadata:
+      labels:
+        app: postservice-application
+    spec:
+      containers:
+        - name: postservice-services-application
+          image: empoweridregistry.azurecr.io/postservice:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
