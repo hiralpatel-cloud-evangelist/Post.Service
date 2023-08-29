@@ -1,0 +1,22 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Post.Service/bin/Debug/net6.0
+/Post.Service/obj
+/Post.Service.Base/bin/Debug/net6.0
+/Post.Service.Base/obj
+/Post.Service.Dal/bin/Debug/net6.0
+/Post.Service.Dal/obj
+/Post.Service.Dto/bin/Debug/net6.0
+/Post.Service.Dto/obj
+/Post.Service.Models/bin/Debug/net6.0
+/Post.Service.Models/obj
+/Post.Service.Services/bin/Debug/net6.0
+/Post.Service.Services/obj
+/Post.Service.UnitTest/bin/Debug
+/Post.Service.UnitTest/obj/Debug
+/Post.Service.Tests/obj
+/Post.Service.Tests/bin
+/packages
